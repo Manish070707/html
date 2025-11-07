@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taj Style Login</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 10%;
+  height: 100vh;
+}
+.left, .right {
+  width: 48%;
+}
+.left h2, .right h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #6a552f;
+}
+.left h2 span {
+  font-weight: 700;
+}
+.left img {
+  width: 250px;
+  border-radius: 5px;
+}
+.left .benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.left button {
+  background-color: #b59a57;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 200px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.left button:hover {
+  background-color: #c3aa62;
+  height: 80px;
+  width: 80px;
+}
+.right {
+  border-left: 1px solid #ccc;
+  padding-left: 5%;
+}
+.tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.tabs span {
+  padding-bottom: 5px;
+  cursor: pointer;
+  color: #6a552f;
+  font-weight: 500;
+}
+.tabs span.active {
+  border-bottom: 2px solid #b59a57;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input {
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 16px;
+  outline: none;
+}
+input:focus {
+  border-bottom: 2px solid #b59a57;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+button {
+  background-color: #b59a57;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #c3aa62;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  opacity: 0.7;
+}
+.logos img {
+  height: 50px;
+  width: 180px;
+}
+#navbar{
+            height: 50px;
+            width: 100%;
+            color: #c3aa62;
+            /* background-image:url(curve-wave-blue-abstract-background-free-png.webp); */
+            /* color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ad8b3a; */
+}
+
+</style>
+</head>
+<body>
+<div class="body">
+    <header><div id="navbar">
+        <a href="index.html"><img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/637a090159033666ec370a740634cdab8add4e1b-80x70.svg"height="50px"width="50px"></a>
+        <!-- <a href="Destination.html">DESTINATIONS</a>
+        <a href="hotel.html">HOTELS</a>
+        <a href="LOGIN.HTML">EXPERIENCES</a>
+        <a href="LOGIN.HTML">OFFERS</a>
+        <a href="LOGIN.HTML">MEMBERSHIPS</a>
+        <a href="LOGIN.HTML">MORE</a>
+        <a href="LOGIN.HTML">LOGIN/JOIN</a>
+        </a> -->
+<div class="container">
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <h2>NOT A MEMBER? <span>JOIN NOW</span></h2>
+    <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/045e2745bbdab00e21ad2c5e8232c23ed7868b0f-201x43.png?w=1600" alt="NeuPass" width="120"><br>
+    <h3>MEMBER BENEFITS</h3>
+    <div class="benefits">
+      <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/a9f62fe5c3de35934c6f1f7443d59915ed9055fa-480x240.jpg" alt="Exclusive Member Rate">
+      <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/938fba81bbfe03a175ba2d3cc59013bef11bff3b-480x240.jpg" alt="Dining">
+      <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/0e17d0b6fd12d3192f998142a9c2e892677e4c5b-480x240.jpg" alt="NeuCoins">
+      <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/6ebadc2923edc19bcabca5550950d14e31f99f18-480x240.jpg" alt="Spa">
+    </div>
+    <button>JOIN NOW</button>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right">
+    <h2>ALREADY A MEMBER? LOGIN</h2>
+    <div class="tabs">
+      <span class="active">MOBILE NUMBER</span>
+      <span>EMAIL ADDRESS</span>
+      <span>MEMBERSHIP NUMBER</span>
+    </div>
+    <form>
+      <input type="text" placeholder="+91  Enter your mobile number" required>
+      <div class="checkbox">
+        <input type="checkbox" required>
+        <label>By continuing you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</label>
+      </div>
+      <button type="submit">CONTINUE</button>
+    </form>
+    <div class="logos">
+      <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/cec3bee1b95378fa937eab2535b5e6db8c24605f-157x77.svg" alt="The Chambers">
+      <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/2333faa7e04cfe17aac96e240053585bedbb5634-200x43.png" alt="NeuPass">
+      <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/790699076f438f8e4d68c1c6f6514c6b95b4e85b-135x84.png" alt="Epicure">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
